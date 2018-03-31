@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "node .\\node_modules\\webpack-cli\\bin\\webpack.js --config .\\build\\webpack.base.config.js --mode production", 
+    "build-dev": "node .\\node_modules\\webpack-cli\\bin\\webpack.js --config .\\build\\webpack.base.config.js --mode development", 
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +15,8 @@
     "express": "^4.16.3",
     "vue": "^2.5.16"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
 }
