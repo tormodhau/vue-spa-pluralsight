@@ -1,4 +1,4 @@
-const base = require("./webpack.base.config");
+const base = require('./webpack.base.config');
 
 const config = Object.assign({}, base, {
     plugins: base.plugins || []
